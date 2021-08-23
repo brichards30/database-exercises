@@ -5,5 +5,5 @@ use codeup_test_db;
 # select 'Album(s) from Fleetwood Mac', name from albums where artist = 'Fleetwood Mac';
 
 delete from albums where release_date > 1991;
-delete from albums where genre = 'pop';
-delete from albums where artist = 'Fleetwood Mac';
+delete from albums where genre = 'disco';
+delete from albums where artist = 'Nirvana';
