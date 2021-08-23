@@ -1,4 +1,5 @@
 use codeup_test_db;
+truncate albums;
 
 insert into albums(artist, name, release_date, sales, genre)
 values ('Michael Jackson', 'Thriller', 1982, 47.9, 'funk'),
@@ -7,5 +8,4 @@ values ('Michael Jackson', 'Thriller', 1982, 47.9, 'funk'),
        ('Adele', '21', 2011, 26.4, 'pop'),
        ('Michael Jackson', 'Dangerous', 1991, 17.0, 'r&b');
 
-select *
-from albums;
+select * from albums;
