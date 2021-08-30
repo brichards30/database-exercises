@@ -41,4 +41,11 @@ where dm.to_date = '9999-01-01'
   AND s.to_date = '9999-01-01'
 order by dept_name;
 
+select concat(e.first_name, ' ', e.last_name) as Employee, d.dept_name as Department, concat(e.first_name, ' ', e.last_name) as Manager
+from employees e
+inner join departments d join dept_emp de on d.dept_no = de.dept_no
+inner join dept_manager dm on d.dept_no = dm.dept_no
+where de.to_date = '9999-01-01'
+order by dept_name limit 5;
+
 
